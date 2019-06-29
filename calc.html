@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>   
+   <div class="main">
+      <form name="myform">
+         <input type="text" name="textview" class="textview" disabled>
+
+      </form>
+      <table> 
+            <tr>
+            
+                  <td><input type="button" class="button  symbol" value="ac"  onclick="ac()"></td>
+                  <td><input type="button" class="button  symbol" value="x²" onclick="square()"></td>
+                  <td><input type="button" class="button symbol" value="%" onclick="enterop('%')"></td>
+                  <td><input type="button" class="button  symbol" value="/" onclick="enterop('/')"></td>
+   
+            </tr>
+         <tr>
+            
+               <td><input type="button" class="button  number" value="7" onclick="enterno(7)"></td>
+               <td><input type="button" class="button  number" value="8" onclick="enterno(8)"></td>
+               <td><input type="button" class="button number" value="9" onclick="enterno(9)"></td>
+               <td><input type="button" class="button symbol" value="*" onclick="enterop('*')"></td>
+
+         </tr>
+         <tr>
+            
+               <td><input type="button" class="button  number" value="4" onclick="enterno(4)"></td>
+               <td><input type="button" class="button  number" value="5" onclick="enterno(5)"></td>
+               <td><input type="button" class="button  number" value="6" onclick="enterno(6)"></td>
+               <td><input type="button" class="button symbol" value="-" onclick="enterop('-')"></td>
+
+         </tr>
+         <tr>
+            
+               <td><input type="button" class="button  number" value="1" onclick="enterno(1)"></td>
+               <td><input type="button" class="button  number" value="2" onclick="enterno(2)"></td>
+               <td><input type="button" class="button  number" value="3" onclick="enterno(3)"></td>
+               <td><input type="button" class="button symbol" value="+" onclick="enterop('+')"></td>
+
+         </tr>
+         <tr>
+            
+               <td><input type="button" class="button number" value="0" onclick="enterno(0)"></td>
+               <td><input type="button" class="button symbol" value="." onclick="enterno('.')"></td>
+               <td><input type="button" class="button symbol" value="<" onclick="back()"></td>
+               <td><input type="button" class="button blue symbol" value="=" onclick="equalTo('=')"></td>
+
+         </tr>
+      </table> 
+         </div>         
+        <script type="text/javascript" src="calc.js"></script>
+        
+</body>
+</html>
